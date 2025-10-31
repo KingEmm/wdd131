@@ -68,7 +68,7 @@ main .card h2 {
     margin: 0;
     text-align: center;
     background-color: var(--primary-color);
-    color: var(--mist);
+    color: var(--white);
     padding: 5px;
 }
 
