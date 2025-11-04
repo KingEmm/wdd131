@@ -28,6 +28,16 @@ header{
     /* border-radius: 20px; */
 }
 
+#menu {
+    color: var(--mist);
+}
+
+header h3{
+    color: var(--mist);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
 header a{
     flex: 1 1 100%;
     /* max-width: 700px; */
@@ -141,11 +151,7 @@ footer {
         background-color: transparent;
     }
     
-    header h3{
-        font-size: 1.5rem;
-        font-weight: bolder;
-        color: var(--mist);
-    }
+    
     
     header nav a{
         /* flex: 1 1 100%; */
@@ -191,6 +197,5 @@ footer {
     .open a{
         display: block;
     }
-
    
 }
