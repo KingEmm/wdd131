@@ -147,7 +147,7 @@ footer {
         color: var(--mist);
     }
     
-    header a{
+    header nav a{
         /* flex: 1 1 100%; */
         /* max-width: 700px; */
         text-decoration: none;
@@ -157,6 +157,7 @@ footer {
         border-radius: 5px;
         color: var(--white);
         transition: all .5s;
+        display: block;
     }
     
     header a:hover{
@@ -187,8 +188,9 @@ footer {
         text-align: center;
     }
 
-
-
+    .open a{
+        display: block;
+    }
 
    
 }
