@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hello this is my country">
+    <meta name="author" content="Emmanuel Kingsley Okafor">
+    <title>My country</title>
+    <link rel="stylesheet" href="/styles/places.css">
+    <script src="/scripts/place.js" defer ></script>
+    <script src="/scripts/getdates.js" defer></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,894;1,894&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/hen_large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hen_small.webp" media="(min-width: 550px)">
+            <img class="bg" src="images/hen_large.webp" alt="Picture of a hen">
+        </picture>
+        <div class="data">
+            <div>
+                <h3>Data</h3>
+            </div>
+            <ul>
+                <li>
+                    <span><strong>Area</strong>: <p> 923,768 sq Km</p></span>
+                </li>
+                <li>
+                    <span><strong>Population</strong>: <p> 232,198,302</p></span>
+                </li>
+                <li>
+                    <span><strong>Capital</strong>: <p>Abuja</p></span>
+                </li>
+                <li>
+                    <span><strong>Languages: </strong> <p>Igbo, English</p></span>
+                </li>
+                <li>
+                    <span><strong>Currency: </strong> <p>Nigeria Naira</p></span>
+                </li>
+                <li>
+                    <span><strong>Time Zone</strong> <p>: WAT</p></span>
+                </li>
+                <li>
+                    <span><strong>Calling Code</strong> <p>: +234</p></span>
+                </li>
+                <li>
+                    <span><strong>Internet TLD</strong><p>: GLO</p></span>
+                </li>
+            </ul> 
+        </div>
+        <div class="weather">
+            <div>
+                <h3>Weather</h3>
+                <picture>
+                    <!-- <source srcset="images/hen_large.webp" media="(min-width: 1000px)"> -->
+                    <source srcset="images/weather_large.svg" media="(min-width: 550px)">
+                    <img class="weat" src="images/weather.svg" alt="Weather Icon" width="30px" height="30px">
+                </picture>
+            </div>
+            <ul>
+                <li>
+                    <span><strong>Temperature:</strong> <p>30 °C</p></span>
+                </li>
+                <li>
+                    <span><strong>Condition:</strong><p> Partly Cloudy</p></span>
+                </li>
+                <li>
+                    <span><strong>Wind</strong><p>: 7 Km/h</p></span>
+                </li>
+                <li>
+                    <span><strong>Wind Chill: </strong><p>25 °C</p></span>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span>⚡ Emmanuel Kingsley Okafor ⚡ Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

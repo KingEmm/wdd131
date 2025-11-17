@@ -1,0 +1,126 @@
+:root {
+    --white : #ffffff;
+    --primary-color : #06741e;
+    --secondary : #1e8646;
+    --grey: #333333;
+    --mist: #ede7e0;
+    --freeze: #35485f;
+}
+
+* {
+    color: var(--mist);
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to top, var(--primary-color), var(--mist), var(--primary-color));
+}
+
+header {
+    margin-bottom: 20px;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+p{
+    font-family: "Rubik", sans-serif;
+}
+
+
+main img{
+    width: 80%;
+}
+
+.data, .weather{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(54, 50, 50, 0.3);
+    border-radius: 5px;
+    margin: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.486);
+    backdrop-filter: blur(10px);
+}
+
+.data div, .weather div{
+    /* background-color: var(--secondary);
+    margin: -2rem 0 .5rem; */
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data div h3, .weather div h3{
+    color: var(--grey);
+    font-size: 1.5rem;
+}
+
+.data ul, .weather ul{
+    text-align: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.data ul li, .weather ul li {
+    list-style-type: none;
+    /* text-align: center; */
+    margin: 5px auto;
+}
+
+.data ul li span, .weather ul li span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background: var(--primary-color);
+    margin: 0;
+}
+
+@media screen and (min-width: 640px) {
+    body{
+        padding: 0 10rem 0;
+    }
+    main{
+        display: block;
+        position: relative;
+    }
+
+    .data div, .weather div{
+        background-color: var(--secondary);
+        margin: -2rem 0 .5rem;
+    }
+
+    main .bg {
+        width: 100%;
+        height:80vh;
+        object-fit: cover;
+        /* position: relative; */
+        right: 10%;
+        z-index: -1;
+    }
+
+    .data{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .weather{
+        position: absolute;
+        bottom: 4px;
+        right: 0;
+        
+    }
+}
