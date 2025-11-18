@@ -83,6 +83,11 @@ main img{
     justify-content: center;
 }
 
+.data ul li span h4, .weather ul li span h4{
+    font-family: 'Rubik' sans-serif;
+    font-weight: 400;
+}
+
 footer{
     background: var(--primary-color);
     margin: 0;
