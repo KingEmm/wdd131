@@ -83,7 +83,7 @@ main img{
     justify-content: center;
 }
 
-.data ul li span h4, .weather ul li span h4{
+.data ul li span span, .weather ul li span span{
     font-family: 'Rubik' sans-serif;
     font-weight: 400;
 }
