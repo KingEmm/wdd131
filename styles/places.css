@@ -84,7 +84,7 @@ main img{
 }
 
 .data ul li span span, .weather ul li span span{
-    font-family: 'Rubik' sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
 
