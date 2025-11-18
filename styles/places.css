@@ -1,21 +1,21 @@
-:root {
+/* :root {
     --white : #ffffff;
     --primary-color : #06741e;
     --secondary : #1e8646;
     --grey: #333333;
     --mist: #ede7e0;
     --freeze: #35485f;
-}
+} */
 
 * {
-    color: var(--mist);
+    color: #ede7e0;
     margin: 0;
     font-family: "Nunito", sans-serif;
 }
 
 body {
     text-align: center;
-    background: linear-gradient(to top, var(--primary-color), var(--mist), var(--primary-color));
+    background: linear-gradient(to top, #06741e,  #ede7e0, #06741e);
 }
 
 header {
@@ -61,7 +61,7 @@ main img{
 }
 
 .data div h3, .weather div h3{
-    color: var(--grey);
+    color:  #333333;
     font-size: 1.5rem;
 }
 
@@ -89,7 +89,7 @@ main img{
 }
 
 footer{
-    background: var(--primary-color);
+    background: #06741e;
     margin: 0;
 }
 
@@ -109,7 +109,7 @@ footer{
     }
 
     .data div, .weather div{
-        background-color: var(--secondary);
+        background-color: #1e8646;
         margin: -2rem 0 .5rem;
     }
 
