@@ -61,8 +61,13 @@ main img{
 }
 
 .data div h3, .weather div h3{
-    color: var(--grey);
+    color: var(--mist);
     font-size: 1.5rem;
+}
+
+
+.weather div h3 img{
+    color: var(--mist);
 }
 
 .data ul, .weather ul{
