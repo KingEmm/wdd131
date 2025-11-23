@@ -125,4 +125,18 @@ function render(arr){
     }
 }
 
-render(temples);
+let homeBtn = document.querySelector('#home')
+let oldBtn = document.querySelector('#old')
+let newBtn= document.querySelector('#new')
+let largeBtn = document.querySelector('#large')
+let smallBtn = document.querySelector('#small')
+
+homeBtn.addEventListener('click', ()=> {render(temples)})
+oldBtn.addEventListener('click', ()=> {render(old)})
+newBtn.addEventListener('click', ()=> {render(_new)})
+largeBtn.addEventListener('click', ()=>{ render(large)})
+smallBtn.addEventListener('click', ()=> {render(small)})
+
+render(temples)
+
+

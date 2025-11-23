@@ -55,13 +55,6 @@ header a{
     transition: all .5s;
 }
 
- 
-header nav{
-    position: absolute;
-    display: none;
-    z-index: 99;
-    /* color:yellow */
-}
 header #menu{
     display: block;
     font-size: 1.7rem;
@@ -83,6 +76,9 @@ header #menu.open::before{
 }
 
 header nav{
+    position: absolute;
+    display: none;
+    z-index: 99;
     background-color: #1e527d;
     display: flex;
     flex-direction: column;
