@@ -5,7 +5,7 @@
     --grey: #2c2929;
     --mist: #ede7e0;
     --freeze: #35485f;
-    --background: #9e9d9d3d;
+    --background: #161515dc;
     --shadow: #1d1a1a6b;
     --rubik: 'Rubik', sans-serif;
     --nunito: 'Nunito', sans-serif;
@@ -77,12 +77,11 @@ header #menu.open::before{
 
 header nav{
     position: absolute;
-    display: none;
+    /* display: none; */
     z-index: 99;
     background-color: #1e527d;
     display: flex;
     flex-direction: column;
-    position: absolute;
     /* top: 2.5rem; */
     width: 50%;
     right: 0;
@@ -120,7 +119,7 @@ main div{
     padding: 1rem 0;
     background-color: var(--background);
     box-shadow: 4px 6px 4px var(--shadow);
-    border: 1px solid var(--shadow);
+    border: 1.5px solid var(--shadow);
     backdrop-filter: blur(10px);
     border-radius: .5rem;
 }
