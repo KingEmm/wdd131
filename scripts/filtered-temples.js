@@ -119,7 +119,7 @@ function render(arr){
                                 <li>Dedicated: <strong>${arr[i].dedicated}</strong></li>
                                 <li>Size: <strong>${arr[i].area}</strong></li>
                             </ul>
-                            <img loading='lazy' src="${arr[i].imageUrl}" alt="${temples[i].templeName}">
+                            <img width="400" height="250" loading='lazy' src="${arr[i].imageUrl}" alt="${temples[i].templeName}">
                         `                     
           main.appendChild(card);
     }
