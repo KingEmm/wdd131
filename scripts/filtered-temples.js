@@ -77,7 +77,7 @@ const temples = [
     dedicated: "1996, May, 26–27",
     area: 51921,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/hong-kong-china-temple/hong-kong-china-temple-28125.jpg"
+    'https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hong-kong-china/400x640/hong-kong-china-temple-lds-39528-wallpaper.jpg'
   },
   {
     templeName: "Accra Ghana Temple",
@@ -85,7 +85,8 @@ const temples = [
     dedicated: "2004, January, 11",
     area:  17500,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-5151.jpg"
+    'https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/accra-ghana/800x450/accra-ghana-temple-detail-249022-2400x1200.jpg'
+    // "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-15503.jpg"
   },
   {
     templeName: "Tokyo Japan",
@@ -93,7 +94,8 @@ const temples = [
     dedicated: "1980, October, 27–29",
     area: 53997,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-8154.jpg"
+    'https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/320x200/tokyo_japan_temple-brides.jpeg'
+    // "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-8154.jpg"
   },
   // Add more temple objects here...
 ];
