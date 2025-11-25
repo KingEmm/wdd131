@@ -6,7 +6,7 @@
     <meta name="description" content="WDD 131 – Dynamic layout experiment that presents one photo in different grid format, exploring creative composition and responsive design.">
     <meta name="author" content="Emmanuel Kingsley Okafor">
     <title>WDD 131 – Temple Gallery</title>
-    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="preload" as="style" href="styles/filtered-temples.css" onload="this.rel='stylesheet'">
     <script src="scripts/filtered-temples.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 <body>
     <header>
         <h3>Temple Album</h3>
-        <button type="button" aria-label="hi" id="menu">menu</button>
+        <a id="menu"></a>
         <nav>
             <a href="#" id="home">Home</a>
             <a href="#" id="old">Old</a>
