@@ -110,16 +110,21 @@ let small = temples.filter((temple) => temple.area <= 10000)
 function render(arr){
     main.innerHTML = ''
     for(let i=0; i<arr.length; i++){
-        let card = document.createElement('div');
+        let name = arr[i].templeName;
+        let location = arr[i].location;
+        let dedicated = arr[i].dedicated;
+        let area = arr[i].area;
+        let url = arr[i].imageUrl;
         
+        let card = document.createElement('div');
         card.innerHTML = `
-                            <h2>${arr[i].templeName}</h2>
+                            <h2>${name}</h2>
                         <ul>
-                                <li>Location: <strong>${arr[i].location}</strong></li>
-                                <li>Dedicated: <strong>${arr[i].dedicated}</strong></li>
-                                <li>Size: <strong>${arr[i].area}</strong></li>
+                                <li>Location: <strong>${location}</strong></li>
+                                <li>Dedicated: <strong>${dedicated}</strong></li>
+                                <li>Size: <strong>${area}</strong></li>
                             </ul>
-                            <img width="400" height="250" loading='lazy' src="${arr[i].imageUrl}" alt="${temples[i].templeName}">
+                            <img width="400" height="250" loading='lazy' fetchpriority='high' src="${url}" alt="${name}">
                         `                     
           main.appendChild(card);
     }
