@@ -100,7 +100,7 @@ const temples = [
   // Add more temple objects here...
 ];
 
-let main = document.querySelector('main');
+let main = document.querySelector('#container');
 
 const old =  temples.filter((temple) => temple.dedicated.slice(0,4) <= 1900)
 const _new = temples.filter((temple) => temple.dedicated.slice(0,4) >= 2000)

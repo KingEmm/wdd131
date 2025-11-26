@@ -98,15 +98,20 @@ header a:hover{
     display: block;
 }
 
-main {
+main{
+    width:100%;
+    height: auto;
+    display: grid;
+}
+
+main #container{
     margin-top: 10px;
     padding: 1rem 2rem;
     display: grid;
-    gap: 2rem;
-    grid-gap: 2%;
+    grid-gap: 1rem;
 }
 
-main div{
+main #container div{
     text-align: center;
     padding: 1rem 0;
     background-color: var(--background);
@@ -116,23 +121,24 @@ main div{
     border-radius: .5rem;
 }
 
-main div h2{
+main #container div h2{
     margin-bottom: .6rem;
 }
 
-main div img{
+main #container div img{
     width: 90%;
     height: auto;
     border-radius: 2px;
+    object-fit: cover;
     margin-top: .5rem;
 }
 
-main div ul li{
+main #container div ul li{
     list-style-type: none;
     font-family: var(--rubik);
 }
 
-main div ul li strong{
+main #container div ul li strong{
     font-family: var(--nunito);
 }
 
@@ -145,14 +151,13 @@ footer {
     text-align: center;
     color: var(--mist);
     font-family: 'Rubik', sans-serif;
-    display: grid;
+    margin-top: 2rem;
+    /* display: block; */
 }
 
 
 
 @media screen and (min-width: 640px) {
- 
-    
     header #menu{
         display: none;
     }
@@ -164,8 +169,6 @@ footer {
         position: initial;
         background-color: transparent;
     }
-    
-    
     
     header nav a{
         /* flex: 1 1 100%; */
@@ -186,15 +189,14 @@ footer {
     }
     
     
-    main {
-        grid-template-columns: 30% 30% 30%;
-        margin-top: 10px;
+    main #container{
+        /* display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1 1 1 auto; */
+        grid-template-columns: 32% 32% 32%;
+        grid-gap: 2%;
+        margin: 10px auto 2rem;
         padding: 1rem 8rem;
-    }
-    
-    main h1{
-        grid-column: 1 / span 3;
-        text-align: center;
     }
 
     .open a{
