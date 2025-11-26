@@ -108,6 +108,19 @@ let large = temples.filter((temple) => temple.area >= 90000)
 let small = temples.filter((temple) => temple.area <= 10000)
 
 function render(arr){
+  if (window.matchMedia("(min-width: 768px)").matches){
+    if (arr.length === 1){
+      main.style.gridTemplateColumns = "100%";
+    }
+    else if(arr.length == 2){
+      main.style.gridTemplateColumns = "49% 49%"
+    }
+    else{
+      main.style.gridTemplateColumns = "32% 32% 32%"
+    }
+
+  }
+
     main.innerHTML = ''
     for(let i=0; i<arr.length; i++){
         let name = arr[i].templeName;
