@@ -7,6 +7,8 @@
     --freeze: #35485f;
     --background: #161515dc;
     --shadow: #1d1a1a6b;
+    --dblue: #066279;
+    --lblue: #6898e0;
     --rubik: 'Rubik', sans-serif;
     --nunito: 'Nunito', sans-serif;
 }
@@ -20,8 +22,7 @@
 
 body{
     font-family: var(--nunito);
-    /* padding: 10px 1rem; */
-    /* background: linear-gradient(to right, rgb(6, 98, 121), rgb(104, 152, 224)); */
+    background: linear-gradient(to right,  var(--dblue), var(--lblue));
 }
 
 header{
@@ -61,7 +62,6 @@ header #menu{
     display: block;
     font-size: 1.7rem;
     font-weight: bold;
-    /* background: none; */
     padding: 0;
     margin: 0;
 }
@@ -79,12 +79,10 @@ header #menu.open::before{
 
 header nav{
     position: absolute;
-    /* display: none; */
     z-index: 99;
     background-color: #1e527d;
     display: flex;
     flex-direction: column;
-    /* top: 2.5rem; */
     width: 50%;
     right: 0;
     padding: 0;
@@ -105,9 +103,9 @@ main {
     padding: 1rem 2rem;
     display: grid;
     gap: 2rem;
-    /* grid-template-columns: 32% 32% 32%;
-    grid-gap: 2%; */
+    grid-gap: 2%;
 }
+
 main div{
     text-align: center;
     padding: 1rem 0;
@@ -186,17 +184,6 @@ footer {
         background: var(--freeze);
         color: var(--mist);
     }
-    
-    /* header a:hover a::after{
-        content: '';
-        position: relative;
-        left: 0;
-        bottom: 3px;
-        width: 60%;
-        color: azure;
-        background-color: azure;
-        z-index: 1000;
-    } */
     
     
     main {
