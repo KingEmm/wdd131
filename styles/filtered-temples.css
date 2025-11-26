@@ -45,14 +45,16 @@ header h3{
 
 header nav a{
     flex: 1 1 100%;
-    /* max-width: 700px; */
     text-decoration: none;
     font-size: 1.2rem;
     padding: 10px;
-    margin: 7px;
     border-radius: 5px;
     color: var(--white);
     transition: all .5s;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: none;
 }
 
 header #menu{
@@ -88,18 +90,11 @@ header nav{
     padding: 0;
     border-radius: 0 0 0 5px;
 }
-header nav a{
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    display: none;
-    /* transition: all .5s; */
-}
+
 header a:hover{
     background: var(--freeze);
     color: var(--mist);
 }
-
 
 .open a{
     display: block;
@@ -122,6 +117,7 @@ main div{
     backdrop-filter: blur(10px);
     border-radius: .5rem;
 }
+
 main div h2{
     margin-bottom: .6rem;
 }
