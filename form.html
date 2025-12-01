@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic product review form that follows industry form best practices all together with local storaage intergration.">
+    <meta name="author" content="Emmanuel Kingsley Okafor">
+    <title>WDD - 131 || Product Review</title>
+    <link rel="stylesheet" href="/styles/forms.css">
+    <script src="/scripts/forms.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="#" method="get">
+            <label id="p_name">
+                <div>Product Name</div>
+                <select name="p_name" id="product_name" >
+                    <option id="" value="flux capacitor">flux capacitor</option>
+                    <option value="power laces">power laces</option>
+                    <option value="time circuits">time circuits</option>
+                </select>
+            </label>
+
+            <label id="rating">
+                <div>Overall Rating</div>
+                <label>
+                    <div></div>
+                    <input type="radio" name="rating" id="rating1"  value="1" required>
+                </label>
+                <label>
+                    <div></div>
+                    <input type="radio" name="rating" id="rating2" value="2" required>
+                </label>
+                <label>
+                    <div></div>
+                    <input type="radio" name="rating" id="rating3" value="3" required>
+                </label>
+                <label>
+                    <div></div>
+                    <input type="radio" name="rating" id="rating4" value="4" required>
+                </label>
+                <label>
+                    <div></div>
+                    <input type="radio" name="rating" id="rating5" value="5" required>
+                </label>
+            </label>
+    
+            <label id="date">
+                <div>Date of Installation</div>
+                <input type="date" id="date" name="date" required>
+            </label>
+    
+            <label id="features">
+                <div>Which  features did you find useful in the product? (Check all that apply)</div>
+                <label class='durability chek'>
+                    <input type="checkbox" name="durability" id="durability">
+                    <div>Durability</div>
+                </label>
+                <label class="ease chek">
+                    <input type="checkbox" name="ease" id="ease"> 
+                    <div>Ease of use</div>
+                </label>
+                <label class="performance chek">
+                    <input type="checkbox" name="performance" id="performance"> 
+                    <div>Performance</div>
+                </label>
+                <label class="design chek">
+                    <input type="checkbox" name="design" id="design"> 
+                    <div>Design</div>
+                </label>
+            </label>
+    
+            <label id="review">
+                <div>Written Review <strong>(Optional)</strong></div>
+                <textarea rows="5" name="review" id="review"></textarea>
+            </label>
+            
+            <label id="name">
+                <div>Your Name <strong>(Optional)</strong></div> 
+                <input type="text" name="name" id="name">
+            </label>
+    
+            <button id="btn" type="submit" value="">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> ⚡ Emmanuel Kingsley Okafor ⚡ Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

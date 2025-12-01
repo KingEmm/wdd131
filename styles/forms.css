@@ -1,0 +1,120 @@
+:root {
+    --white : #ffffff;
+    --primary-color : #051e33;
+    --secondary : #41676d;
+    --grey: #333333;
+    --mist: #ede7e0;
+    --freeze: #35485f88;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    padding: 0;
+    background: var(--secondary);
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    /* max-width: 95%; */
+    width: 95%;
+    background: var(--freeze);
+    margin: 1rem auto 1rem;
+    display: grid;
+    align-items: baseline;
+    justify-content: baseline;
+    grid-template-columns: 100%;
+    padding: 1rem;
+}
+
+#p_name, #rating, #date, #features, #review, #name, button{
+    width: 95%;
+    margin: 0.5rem auto;
+}
+
+#rating {
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    grid-gap: 5px;
+    align-items: first baseline;
+}
+
+#rating  div{
+    grid-column: 1 / span 5;
+}
+
+#rating label{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#rating label div{
+}
+
+#rating label > div::before{
+    content: '\2606';
+}
+
+#rating input:checked ~ div::before{
+    content: '\2605';
+}
+
+form #features label{
+    display: flex;
+}
+
+input[type='date'], input[type='text'],input[type='radio'], select{
+    margin: 0 auto;
+    padding: 5px;
+    width: 90%;
+    height: 3rem ;
+    font-size: 1.1rem;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+input[type='radio'], input[type='checkbox'] {
+    height: 30px;
+    width: 30px;
+}
+
+input[type='checkbox']{
+    margin: 10px;
+    padding: 100px;
+}
+
+.chek{
+    align-items: center;
+}
+
+textarea{
+    padding: 10px;
+}
+
+button{
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+    width: 30%;
+    font-weight: 700;
+    font-size: 1em;
+    margin: 2%;
+    border-radius: 5px;
+    color: var(--mist);
+    appearance: none;
+}
+
+
+@media screen and (min-width: 640px){
+
+}
