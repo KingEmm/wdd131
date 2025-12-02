@@ -38,7 +38,7 @@ form{
 
 #p_name, #rating, #date, #features, #review, #name, button{
     width: 95%;
-    margin: 0.5rem auto;
+    margin: 0.8rem auto;
 }
 
 #p_name {
@@ -165,6 +165,25 @@ button{
     padding-left: 1rem;
 }
 
-@media screen and (min-width: 640px){
+footer{
+    background: var(--secondary);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+}
 
+
+@media screen and (min-width: 640px){
+    body{
+        background: linear-gradient(to top left, var(--secondary), white, var(--secondary));
+    }
+
+    form{
+        width: 50%;
+        border-radius: 8px;
+        border: 1px solid var(--mist);
+        box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.486);
+        backdrop-filter: blur(10px);
+    }
 }
