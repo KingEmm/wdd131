@@ -28,7 +28,6 @@ const products = [
 
 
 let selections  = document.getElementById('product_name');
-selections.innerHTML = ''
 
 for (var item in products){
   let option  = document.createElement('option');
@@ -42,13 +41,34 @@ for (var item in products){
 
 let button = document.getElementById('btn')
 
-let numReviews = 0
-// button.addEventListener('click', ()=>{
-// })
-document.addEventListener('DOMContentLoaded', ()=>{
-  numReviews++;
-  localStorage.setItem("numReviews-ls", numReviews);
+let numReviews =  Number(localStorage.getItem("numReviews-ls")) || 0;
+button.addEventListener('mouseover', (e)=>{
+  // button.style.cursor = 'not-allowed'
+  let form = document.querySelector('form');
 
+  if (form.checkValidity()){
+    button.style.cursor = 'pointer'
+    numReviews++;
+    localStorage.setItem("numReviews-ls", numReviews);
+  }
+  else{
+    e.preventDefault();
+    form.reportValidity();
+    button.style.cursor = 'not-allowed'
+  }
 })
+// document.addEventListener('DOMContentLoaded', ()=>{
+//   numReviews++;
+//   localStorage.setItem("numReviews-ls", numReviews);
+// })
+
+button.addEventListener('click', ()=>{
+  document.onloadstart = ()=>{
+    // document.addEventListener('DOMContentLoaded', ()=>{
+  }})
+
+document.onload = ()=>{ numReviews++; localStorage.setItem("numReviews-ls", numReviews); };
+
+// })
 
 
