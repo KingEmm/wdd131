@@ -27,14 +27,12 @@ h1{
 }
 
 form{
-    /* max-width: 95%; */
     width: 85%;
     background: var(--freeze);
     margin: 1rem auto 1rem;
-    display: grid;
+    display: block;
     align-items: baseline;
-    justify-content: baseline;
-    grid-template-columns: 100%;
+    justify-content: center;
     padding: 1rem;
 }
 
@@ -43,45 +41,90 @@ form{
     margin: 0.5rem auto;
 }
 
-#rating {
+#p_name {
+    display: grid;
+}
+
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+    width: 100%;
+}
+
+.stars > label {
+	color: var(--primary-color);
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+/* #rating {
     display: grid;
     grid-template-columns: 19% 19% 19% 19% 19%;
     grid-gap: 5px;
-    align-items: first baseline;
 }
 
-#rating  div{
+#rating span{
     grid-column: 1 / span 5;
 }
 
-#rating label{
+#rating div{
     display: grid;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: baseline;
 }
 
-/* #rating label div{
-} */
 
-#rating label > div::before{
+#rating div > label::before{
     content: '\2606';
 }
 
-#rating input:checked ~ div::before{
+#rating input:checked ~ label::before{
     content: '\2605';
-}
+} */
 
-form #features label{
+form #features div{
     display: flex;
+    align-items: center;
 }
 
-input[type='date'], input[type='text'],input[type='radio'], select{
-    margin: 0 auto;
+input[type='date'], input[type='radio']{
+    margin: 0.5rem 0;
     padding: 5px;
-    width: 90%;
+    width: 100%;
     height: 3rem ;
     font-size: 1.1rem;
     caret-color: rgba(0, 0, 0, 0);
+}
+
+input[type='text'], select{
+    font-size: 1.1rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
 }
 
 input[type='radio'], input[type='checkbox'] {
@@ -92,7 +135,7 @@ input[type='radio'], input[type='checkbox'] {
 
 input[type='checkbox']{
     margin: 10px;
-    padding: 100px;
+    /* padding: 100px; */
 }
 
 .chek{
@@ -101,7 +144,8 @@ input[type='checkbox']{
 
 textarea{
     padding: 10px;
-    width: 100%;
+    width: 90%;
+    border-radius: 5px;
 }
 
 button{
@@ -110,12 +154,16 @@ button{
     width: 30%;
     font-weight: 700;
     font-size: 1em;
-    margin: 2%;
+    margin: .5rem 0;
     border-radius: 5px;
     color: var(--mist);
-    appearance: none;
 }
 
+.btn {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+}
 
 @media screen and (min-width: 640px){
 
