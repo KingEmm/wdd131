@@ -1,0 +1,64 @@
+:root {
+  --yellow-primary: #F7C948;
+  --yellow-light: #FFF9E6;
+
+  --red-button: #E63946;
+  --red-button-hover: #C1272D;
+
+  --bg-light: #F8F8F8;
+
+  --text-dark: #1A1A1A;
+  --text-muted: #6B7280;
+
+  --body-text: 'Poppins', san-serif;
+  --heading-text: 'Inter', san-serif;
+}
+
+body{
+    font-family: var(--body-text);
+}
+
+
+h1, h2 {
+    font-family: var(--heading-text);
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+main > div {
+    margin: 1rem;
+    background-color: var(--text-dark);
+    padding: 1rem;
+    color: var(--bg-light);
+}
+
+.primary{background-color: var(--yellow-primary); width: 100%; height: 30px; display: flex;align-items: center;justify-content: center;}
+.light{background-color: var(--yellow-light);color: var(--text-dark); width: 100%; height: 30px; display: flex;align-items: center;justify-content: center;}
+.red {background-color: var(--red-button); width: 100%; height: 30px; display: flex;align-items: center;justify-content: center;}
+.background {background-color: var(--bg-light); color: var(--text-dark); width: 100%; height: 30px; display: flex;align-items: center;justify-content: center;}
+.text {
+background-color: var(--text-dark); width: 100%; height: 30px; display: flex;align-items: center;justify-content: center;
+}
+
+img {
+    width: 30%;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--text-muted);
+    padding: 2rem;
+}
+
+@media screen and (max-width: 640px){
+    main{
+        width: 90%;
+    }
+}

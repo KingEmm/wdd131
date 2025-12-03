@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 – Dynamic product review form that follows industry form best practices all together with local storaage intergration.">
+    <meta name="description" content="WDD 131 – Dynamic product review form that follows industry form best practices all together with local storage intergration.">
     <meta name="author" content="Emmanuel Kingsley Okafor">
     <title>WDD - 131 || Product Review</title>
     <link rel="stylesheet" href="styles/forms.css">
@@ -17,14 +17,14 @@
     <main>
         <form action="review.html" method="get">
             <div id="p_name">
-                <label  for="product_name">Product Name</label>
+                <label  for="product_name"><strong>*</strong>Product Name</label>
                 <select name="p_name" id="product_name" required>
                     <option id="default" value="" selected disabled>Select a Product ...</option>
                 </select>
             </div>
 
             <div id="rating">
-                <span>Overall Rating</span>
+                <span><strong>*</strong>Overall Rating</span>
                 <div class="stars">
 	                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                     <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
@@ -60,7 +60,7 @@
             </div>
     
             <div id="date">
-                <label  for="dates">Date of Installation</label>
+                <label  for="dates"><strong>*</strong>Date of Installation</label>
                 <input type="date" id="dates" name="date" required>
             </div>
     
