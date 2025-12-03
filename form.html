@@ -15,22 +15,22 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form action="./review.html" method="get">
+        <form action="review.html" method="get">
             <div id="p_name">
                 <label  for="product_name">Product Name</label>
                 <select name="p_name" id="product_name" required>
-                    <option id="default" selected disabled>Select a Product ...</option>
+                    <option id="default" value="" selected disabled>Select a Product ...</option>
                 </select>
             </div>
 
             <div id="rating">
                 <span>Overall Rating</span>
                 <div class="stars">
-	                <label for="fivestar"></label><input type="radio" id="fivestar" name="stars" value="5" required>
-                    <label for="fourstar"></label><input type="radio" id="fourstar" name="stars" value="4" required>
-                    <label for="threestar"></label><input type="radio" id="threestar" name="stars" value="3" required>
-                    <label for="twostar"></label><input type="radio" id="twostar" name="stars" value="2" required>
-                    <label for="onestar"></label><input type="radio" id="onestar" name="stars" value="1" required>
+	                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
                 </div>
                 <!-- <div>
                     <label for="rating1">

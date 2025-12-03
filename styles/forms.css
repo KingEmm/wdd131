@@ -73,11 +73,11 @@ input[type="radio"] {
 	color: #000;
 }
 
-.stars > label::before {
+.stars label::after {
 	content: "\2606";
 }
 
-.stars input:checked ~ label::before {
+.stars input:checked ~ label::after {
 	content: "\2605";
 }
 

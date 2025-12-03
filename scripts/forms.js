@@ -42,7 +42,7 @@ for (var item in products){
 let button = document.getElementById('btn')
 
 let numReviews =  Number(localStorage.getItem("numReviews-ls")) || 0;
-button.addEventListener('mouseover', (e)=>{
+button.addEventListener('click', (e)=>{
   // button.style.cursor = 'not-allowed'
   let form = document.querySelector('form');
 
@@ -54,13 +54,8 @@ button.addEventListener('mouseover', (e)=>{
   else{
     e.preventDefault();
     form.reportValidity();
-    button.style.cursor = 'not-allowed'
   }
 })
-// document.addEventListener('DOMContentLoaded', ()=>{
-//   numReviews++;
-//   localStorage.setItem("numReviews-ls", numReviews);
-// })
 
 button.addEventListener('click', ()=>{
   document.onloadstart = ()=>{
