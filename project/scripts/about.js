@@ -88,10 +88,10 @@ const changeSlide = (length, duration)=>{
   }, duration);
 }
 
-if(window.matchMedia("(min-width: 1200px)")){
+if(window.matchMedia("(min-width: 1200px)").matches){
   changeSlide(3, 4000)
 }
-else if(window.matchMedia("(min-width: 740px)")){
+else if(window.matchMedia("(min-width: 740px)").matches){
   changeSlide(7, 4000)
 }
 else{    

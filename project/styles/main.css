@@ -29,10 +29,10 @@ h1{
 }
 
 header{
+    padding: .5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5rem 4rem;
     background-color: var(--text-dark);
     color: var(--bg-light);
     /* border-radius: 20px; */
@@ -82,7 +82,7 @@ header nav a:hover::after{
 
 header #menu{
     display: block;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     font-weight: bold;
     padding: 0;
     margin: 0;
@@ -115,7 +115,7 @@ header nav{
     width: 70px;
     height: 35px;
     border-radius: 10px;
-    background-color: var(--yellow-primary);
+    background-color: var(--red-button-hover);
     position: relative;
     cursor: pointer;
     border: 2px solid var(--yellow-light);
@@ -148,7 +148,7 @@ header nav{
 
 main{
     margin: 2rem auto;
-    width: 80%;
+    width: 95%;
 }
 
 main .hero{
@@ -264,6 +264,9 @@ footer{
 
 
 @media screen and (min-width: 750px) {
+    header{
+        padding: .5rem 3rem;
+    }
     header #menu{
         display: none;
     }
@@ -289,6 +292,9 @@ footer{
         display: block;
     }
 
+    main{
+        width: 90%;
+    }
     main .hero{
         grid-template-columns: 60% 35%;
     }
@@ -311,5 +317,8 @@ footer{
 @media screen and (min-width: 1200px){
     .project div{
         grid-template-columns: 32% 32% 32%;
+    }
+    .main{
+        width: 80%;
     }
 }
