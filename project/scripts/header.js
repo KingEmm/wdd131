@@ -12,6 +12,10 @@ console.log("Hi there from Emmanuel");
 let menu_btn = document.getElementById('menu');
 let menu = document.querySelector('nav');
 
+let modeImg = document.createElement('img')
+
+
+
 menu_btn.addEventListener('click', ()=>{
     // let msg = prompt('menu Clicked \n What is your name? ');
     // document.querySelector('h1').innerText = `Hello ${msg}`;
@@ -32,8 +36,14 @@ const updateUI = ()=>{
         header.style.backgroundColor = 'var(--text-muted)';
         toggleBtn.style.background = 'var(--text-grey)';
         h2.style.background = 'var(--text-dark)';
+        modeImg.src = 'images/dark.svg';
+        modeImg.alt = 'Dark icon';
+        toggleBtn.appendChild(modeImg);
     }
     else{
+        modeImg.src = 'images/light.svg';
+        modeImg.alt = 'light icon';
+        toggleBtn.appendChild(modeImg);
         toggleBtn.style.background = '';
         toggleBtn.style.right = '0px';
         body.style.background = 'var(--bg-light)';
