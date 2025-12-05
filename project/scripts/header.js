@@ -30,8 +30,8 @@ const updateUI = ()=>{
         body.style.backgroundColor = 'var(--text-dark)';
         body.style.color = 'var(--bg-light)';
         header.style.backgroundColor = 'var(--text-muted)';
-        h2.style.backgroundColor = 'var(--text-dark)';
         toggleBtn.style.background = 'var(--text-grey)';
+        h2.style.background = 'var(--text-dark)';
     }
     else{
         toggleBtn.style.background = '';
@@ -39,8 +39,8 @@ const updateUI = ()=>{
         body.style.background = 'var(--bg-light)';
         body.style.color = 'var(--text-dark)';
         header.style.backgroundColor = 'var(--text-dark)'
-        h2.style.backgroundColor = 'var(--bg-light)'
         project.style.border = '1px solid var(--yellow-light)'
+        h2.style.background = 'var(--bg-light)'
     }
 }
 

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
     <script src="scripts/header.js" defer></script>
 </head>
 <body>
@@ -24,7 +25,34 @@
             <a href="contact.html" id="small">Contact</a>
         </nav>
     </header>
+    <main>
+        <h1>Contact Me</h1>
+        <section>
+            <form action="#" method="get">
+                <div id="name">
+                    <label  for="names">Your Name </label>
+                    <input type="text" name="name" id="names required">
+                </div>
+                
+                <div id="email">
+                    <label  for="names">Your Email</label>
+                    <input type="email" name="name" id="names required">
+                </div>
     
+                <div id="review">
+                    <label  for="reviews">Message</label>
+                    <textarea rows="5" cols="10" name="review" id="reviews required"></textarea>
+                </div>
+                
+                <div class="btn">
+                    <button id="btn" type="submit" value="">Leave a message</button>
+                </div>
+            </form>
+            <div>
+
+            </div>
+        </section>
+    </main>
     <footer>
         <p>© <span id="currentyear"></span>⚡ Emmanuel Kingsley Okafor ⚡ Nigeria</p>
         <p id="lastModified"></p>

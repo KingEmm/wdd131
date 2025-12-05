@@ -92,7 +92,7 @@ if(window.matchMedia("(min-width: 1200px)")){
   changeSlide(3, 4000)
 }
 else if(window.matchMedia("(min-width: 740px)")){
-  changeSlide(4, 4000)
+  changeSlide(7, 4000)
 }
 else{    
   changeSlide(skil.length, 4000)
