@@ -42,11 +42,11 @@ header{
     color: var(--mist);
 }
 
-header img{
+header > img{
     width: 50px;
     height: 50px;
-    border-radius: 50px;
-    object-fit: fill;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 header nav a{
@@ -115,17 +115,18 @@ header nav{
     width: 70px;
     height: 35px;
     border-radius: 10px;
-    background-color: var(--red-button-hover);
+    background-color: var(--yellow-primary);
     position: relative;
     cursor: pointer;
     border: 2px solid var(--yellow-light);
+    overflow: hidden;
 }
 
 #t_btn{
     height: 35px;
     width: 40px;
     background-color: var(--yellow-light);
-    border-radius: 10px;
+    border-radius: 7px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -163,7 +164,7 @@ main .hero div{
 
 .hero strong{
     font-weight: bolder;
-    color: var(--text-muted);
+    color: var(--yellow-primary);
     /* transition: all .2s; */
     position: relative;
 }
@@ -306,7 +307,7 @@ footer{
 
 
     main .hero .img{
-        border-radius:  50%;;
+        border-radius:  40% 60% 55% 45% / 55% 45% 60% 40%;;
     }
     
     .project div{
