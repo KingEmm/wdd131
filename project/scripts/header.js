@@ -33,7 +33,7 @@ const updateUI = ()=>{
         toggleBtn.style.right = '30px';
         body.style.backgroundColor = 'var(--text-dark)';
         body.style.color = 'var(--bg-light)';
-        header.style.backgroundColor = 'var(--text-muted)';
+        header.style.borderBottom = '0.5px solid var(--yellow-light)';
         toggleBtn.style.background = 'var(--text-grey)';
         h2.style.background = 'var(--text-dark)';
         modeImg.src = 'images/dark.svg';

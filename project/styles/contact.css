@@ -30,15 +30,17 @@ form div input,  textarea{
     font-size: 1.5em;
 }
 
-/* form div input:active  label{
-    display: none;
+form div input:focus-within  label{
+    /* display: none; */
     top: -5px;
-} */
+} 
 
 form button{
-    width : 40%; 
+    width : 60%; 
     padding: 1rem;
     font-weight: 600;
     font-size: 1em;
+    border-radius: 7px;
+    background-color: var(-);
 }
 

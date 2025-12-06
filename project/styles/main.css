@@ -164,7 +164,7 @@ main .hero div{
 .hero strong{
     font-weight: bolder;
     color: var(--text-muted);
-    transition: all .2s;
+    /* transition: all .2s; */
     position: relative;
 }
 
@@ -245,8 +245,9 @@ main .hero img{
 }
 
 .project div img{
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 5px;
+    width: 100%;
 }
 
 footer{
@@ -305,7 +306,7 @@ footer{
 
 
     main .hero .img{
-        border-radius: 53% 47% 51% 49% / 32% 34% 66% 68%;
+        border-radius:  50%;;
     }
     
     .project div{

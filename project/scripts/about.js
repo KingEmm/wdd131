@@ -58,13 +58,13 @@ let projectContainers = document.querySelector('.project div').clientWidth
 
 
 for (let i = 0; i < skil.length; i++){
-  if(window.matchMedia("(min-width: 1200px)")){
+  if(window.matchMedia("(max-width: 740px)")){    
     skil[i].style.width = `${projectContainers}px`
   }
-  else if(window.matchMedia("(min-width: 740px)")){
-    skil[i].style.width = `${projectContainers *.5}px`
+  else if(window.matchMedia("(min-width: 740px)").matches){
+    skil[i].style.width = `${projectContainers}px`
   }
-  else{    
+  if(window.matchMedia("(min-width: 1200px)").matches){
     skil[i].style.width = `${projectContainers}px`
   }
 }
