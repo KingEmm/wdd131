@@ -1,45 +1,45 @@
-const skills = {
-  html : {
+const skills = [
+  {
     s_name: 'HTML5',
     img :'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
   },
-  css : {
+  {
     s_name : 'CSS',
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
-  javascript:{
+  {
     s_name : 'JavaScript',
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
   },
-  python: {
+  {
     s_name : 'Python',
     img : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
   },
-  cpp: {
+  {
     s_name : 'CPP',
     img : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
   },
 
-  django: {
+  {
     s_name : 'Django Framework',
     img : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
   },
-  mysql: {
+  {
     s_name : 'MySQL',
     img : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
   },
-  react:  {
+  {
     s_name: 'React',
      img : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     },
-  solidity: {
+  {
     s_name: 'Solidity',
      img : "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg"
   },
-};
+];
 
 
-let projects = document.querySelector('.project div div');
+let projects = document.querySelector('.project div');
 // projects.innerHTML = ''
 let projectss = document.querySelector('.project div');
 let skill = 0;
@@ -58,14 +58,14 @@ let projectContainers = document.querySelector('.project div').clientWidth
 
 
 for (let i = 0; i < skil.length; i++){
-  if(window.matchMedia("(max-width: 740px)")){    
+  if(window.matchMedia("(max-width: 740px)").matches){    
     skil[i].style.width = `${projectContainers}px`
   }
   else if(window.matchMedia("(min-width: 740px)").matches){
-    skil[i].style.width = `${projectContainers}px`
+    skil[i].style.width = `${projectContainers / 2}px`
   }
   if(window.matchMedia("(min-width: 1200px)").matches){
-    skil[i].style.width = `${projectContainers}px`
+    skil[i].style.width = `${projectContainers / 3}px`
   }
 }
 
@@ -73,10 +73,10 @@ const changeSlide = (length, duration)=>{
   let wi = projectContainer.offsetWidth;
   
   let i = 0;
-  
+  let gap = (projectContainers - (skil[0].offsetWidth * 2) ) / skills.length
   let change = setInterval(() => {
     projectss.scroll({
-      left: wi * i,
+      left: (wi * i) + gap,
       behavior: "smooth"
     });
   
@@ -88,11 +88,13 @@ const changeSlide = (length, duration)=>{
   }, duration);
 }
 
+
+
 if(window.matchMedia("(min-width: 1200px)").matches){
   changeSlide(3, 4000)
 }
 else if(window.matchMedia("(min-width: 740px)").matches){
-  changeSlide(7, 4000)
+  changeSlide(4, 4000)
 }
 else{    
   changeSlide(skil.length, 4000)

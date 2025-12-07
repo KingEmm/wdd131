@@ -21,6 +21,25 @@ let myInterval = setInterval(()=>{
                 j++
                 if (j >= words[i].length){
                     clearInterval(write)
+                    let strong = document.querySelector('strong');
+                    let af = getComputedStyle(strong, '::after');
+                    let k = 0;
+                    let blink = setInterval(()=>{
+                        if((k % 2) == 0){
+                            strong.classList.add('st')
+                            strong.classList.remove('rst')
+                            // document.styleSheets.in
+                        }
+                        else{
+                            strong.classList.remove('st')
+                            strong.classList.add('rst')
+                            // af.opacity = 1
+                        }
+                        k++
+                        if(k == 6){
+                            clearInterval(blink)
+                        }
+                    },500)
                 }
             },2500/words[1].length)
         }

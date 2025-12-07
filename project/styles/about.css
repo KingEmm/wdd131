@@ -24,6 +24,13 @@ h1{
     overflow-x: hidden;
     scroll-behavior: smooth;
     /* transform: translateX(-50%); */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 0;
+    grid-gap: 0;
+    text-align: center;
+    /* flex-wrap: nowrap; */
 }
 
 .project div::-webkit-scrollbar {
@@ -35,19 +42,26 @@ h1{
     background: transparent;
 }
 
-.project div > div {
+/* .project div > div {
     display: flex;
     justify-content: baseline;
     gap: 0;
     margin: 0;
-}
+} */
 
-.project div > div figure {
+/* .project div > div figure {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: 0;
+} */
+
+.project div figure{
+    /* width: 100%; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* .project div div figure img {
@@ -58,9 +72,14 @@ h1{
     .hero_a{
         grid-template-columns: 30% 67%;
     }
-    
+    .project div{
+        grid-auto-columns: 50%;
+    }
 }
 
 @media screen and (min-width: 1200px){
+    .project div{
+        grid-auto-columns: 33.3%;
+    }
 
 }
