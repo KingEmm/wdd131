@@ -76,7 +76,7 @@ const changeSlide = (length, duration)=>{
   let gap = (projectContainers - (skil[0].offsetWidth * 2) ) / skills.length
   let change = setInterval(() => {
     projectss.scroll({
-      left: (wi * i) + gap,
+      left: (wi * i),
       behavior: "smooth"
     });
   
@@ -90,10 +90,10 @@ const changeSlide = (length, duration)=>{
 
 
 if(window.matchMedia("(min-width: 1200px)").matches){
-  changeSlide(3, 4000)
+  changeSlide(4, 4000)
 }
 else if(window.matchMedia("(min-width: 740px)").matches){
-  changeSlide(4, 4000)
+  changeSlide(5, 4000)
 }
 else{    
   changeSlide(skil.length, 4000)

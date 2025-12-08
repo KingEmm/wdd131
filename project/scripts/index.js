@@ -5,7 +5,11 @@ let strongText  = document.querySelector('strong');
 
 let i = 0;
 
-let myInterval = setInterval(()=>{
+let myInterval = null;
+
+const startMyInterval = ()=>{
+    if (myInterval === null)
+    myInterval = setInterval(()=>{
     let j = words[i].length;
     let word = words[i];
 
@@ -51,6 +55,28 @@ let myInterval = setInterval(()=>{
         i = 0
     }
 },9000)
+}
 
 
+const stopMyInterval = ()=>{
+    if(myInterval !== null){
+        clearInterval(myInterval);
+        myInterval = null;
+    }
+}
 
+function handleActivity() {
+    const isActive = !document.hidden && document.hasFocus();
+
+    if (isActive) {
+        startMyInterval();
+    } else {
+        stopMyInterval();
+    }
+}
+
+document.addEventListener("visibilitychange", handleActivity);
+window.addEventListener("focus", handleActivity);
+window.addEventListener("blur", handleActivity);
+
+handleActivity();
