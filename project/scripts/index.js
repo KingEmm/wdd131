@@ -36,7 +36,7 @@ let myInterval = setInterval(()=>{
                             // af.opacity = 1
                         }
                         k++
-                        if(k == 6){
+                        if(k ==5){
                             clearInterval(blink)
                         }
                     },500)

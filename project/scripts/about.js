@@ -89,7 +89,6 @@ const changeSlide = (length, duration)=>{
 }
 
 
-
 if(window.matchMedia("(min-width: 1200px)").matches){
   changeSlide(3, 4000)
 }
