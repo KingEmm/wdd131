@@ -115,6 +115,7 @@ section a{
     background-color: var(--bg-light);
     padding: 5px;
     border-radius: 5px;
+    color: var(--text-dark);
 }
 
 .project img{ 
