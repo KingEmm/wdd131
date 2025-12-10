@@ -35,6 +35,8 @@ form div input,  textarea{
     height: 45px;
     font-size: 1.5em;
     background-color: var(--yellow-light);
+    color: var(--text-dark);
+    border-radius: 7px;
 }
 
 form div input:focus-within  label{
