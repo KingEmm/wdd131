@@ -23,14 +23,12 @@ h1{
 .project > div {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    /* transform: translateX(-50%); */
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
     gap: 0;
     grid-gap: 0;
     text-align: center;
-    /* flex-wrap: nowrap; */
 }
 
 .project div::-webkit-scrollbar {
@@ -42,34 +40,12 @@ h1{
     background: transparent;
 }
 
-/* .project div > div {
-    display: flex;
-    justify-content: baseline;
-    gap: 0;
-    margin: 0;
-} */
-
-/* .project div > div figure {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-} */
-
 .project div figure{
-    /* width: 100%; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     grid-gap: 0;
 }
-
-/* .project div div figure img {
-    width: 100%;
-} */
-
-section:nth-child(:not(first)) {background-color: skyblue}
 
 @media screen and (min-width: 750px){
     .hero_a{
@@ -85,5 +61,4 @@ section:nth-child(:not(first)) {background-color: skyblue}
     .project div{
         grid-auto-columns: 33.3%;
     }
-
 }
