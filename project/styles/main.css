@@ -263,7 +263,22 @@ main .hero img{
     object-fit: fill;
     border-radius: 5px;
     width: 100%;
+    height: auto;
 }
+
+.project div a{
+    background-color: var(--red-button);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.project div a:hover{
+    background-color: var(--red-button-hover);
+}
+
 
 footer{
     background: var(--text-muted);
