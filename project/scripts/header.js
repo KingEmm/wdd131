@@ -1,3 +1,5 @@
+console.log('Please I used localStorage for toggle switching between light and dark mode')
+
 const project = document.querySelector('.project')
 const body = document.querySelector('body')
 const header = document.querySelector('header')
